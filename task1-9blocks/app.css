@@ -6,7 +6,7 @@
 .container-flex > .wrap {
     display: flex;
 }
-.container-flex > .block {
+.container-flex > .wrap > .block {
     flex-direction: row;
     flex: 1;
     margin: 1px;
