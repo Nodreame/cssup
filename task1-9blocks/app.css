@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-flex > .wrap {
+    display: flex;
+}
+.container-flex > .block {
+    flex-direction: row;
+    flex: 1;
+    margin: 1px;
+    padding-top: 33%;
+
+    background-color: orange;
+    border-radius: 5px;
+}
