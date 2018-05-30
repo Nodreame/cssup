@@ -19,14 +19,14 @@
 }
 .container-flex > .wrap > .block:first-child,
 .container-flex > .wrap > .block:last-child {
-    margin: 4% 4% 0 4%;
+    margin: 3% 3% 0 3%;
 }
 .container-flex > .wrap:last-child > .block {
-    margin: 4% 0;
+    margin: 3% 0;
 }
 .container-flex > .wrap:last-child > .block:first-child,
 .container-flex > .wrap:last-child > .block:last-child {
-    margin: 4%;
+    margin: 3%;
 }
 
 /** container-flex2 **/
