@@ -3,9 +3,9 @@
     padding: 0;
 }
 .block {
-    padding-top: 28%;
-    margin-top: 4%;
-    border-radius: 5%;
+    padding-top: 30%;
+    margin-top: 3%;
+    border-radius: 10%;
     background-color: orange;
 }
 
@@ -32,10 +32,10 @@
 /** container-flex2 **/
 .container-flex2 > .wrap {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .container-flex2 > .wrap > .block {
-    width: 28%;
-    margin-left: 4%;
+    width: 30%;
+    /* margin-left: 4%; */
 }
