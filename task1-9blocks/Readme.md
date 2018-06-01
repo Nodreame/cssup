@@ -131,3 +131,4 @@
 - Github: [cssup](https://github.com/Nodreame/cssup)
 - 线上展示： [Task1-9blocks](http://118.89.44.244/cssup/task1-9blocks/index.html)
 - Readme.md下载: [Readme](http://118.89.44.244/cssup/task1-9blocks/Readme.md)
+- 文章：[\[CSS练习\]IT修真院--练习1-九宫格](https://segmentfault.com/a/1190000015104917)
