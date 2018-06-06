@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  font-size: 125%;
+  /* -webkit-text-size-adjust: 100%; */
+}
+body {
+  background-color: #eff0f4;
+}
+form {
+  font: 0.5px;
+}
+a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+/*** header flex***/
+/* header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5fc0cd;
+  color: #fff;
+  padding: 0.7rem 0.55rem;
+}
+header > a {
+  font-size: 0.7rem;  
+}
+header > span {
+  font-size: 0.9rem;
+  font-family: "黑体";
+} */
+
+/*** header float **/
+/* header {
+  background-color: #5fc0cd;
+  color: #fff;
+  padding: 0.5rem 0.55rem;
+  text-align: center;
+  height: 1.3rem;
+  line-height: 1.3rem;
+}
+header > a {
+  font-size: 0.7rem;  
+}
+header > a:first-child {
+  float: left;
+}
+header > a:last-child {
+  float: right;
+}
+header > span {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-family: "黑体"; 
+} */
+
+/*** header absolute **/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5fc0cd;
+  color: #fff;
+  padding: 0.5rem 0;
+  text-align: center;
+  height: 1.3rem;
+  line-height: 1.3rem;
+}
+header > a {
+  position: absolute;
+  font-size: 0.7rem;  
+}
+header > a:first-child {
+  left: 0.55rem;
+}
+header > a:last-child {
+  right: 0.55rem;
+}
+header > span {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-family: "黑体"; 
+}
+.container {
+  margin-top: 2.8rem;
+}
+/*** form ***/
+.form-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  margin: 0.5rem 0;
+}
+.row-icon {
+  padding: 0.5rem 0;
+  line-height: 1.5rem;
+  height: 1.5rem;
+}
+.row-icon > img {
+  padding: 0.25rem 1.1rem;
+  width: 0.65rem;
+  height: 1rem;
+  border-right: 1px solid #eaedee;
+}
+.form-row input {
+  flex: 1;
+  padding: 0.25rem 1.1rem;
+  color: #444;
+  border: 0;
+  outline: none;
+}
+.cross {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.5rem;
+}
+ /* Webkit浏览器支持(非标准) https://developer.mozilla.org/zh-CN/docs/Web/CSS/::-webkit-input-placeholder */
+.form-row input::-webkit-input-placeholder {
+	color: #ccc;
+}
+/* Chrome:57+已支持去前缀 https://www.chromestatus.com/feature/6715780926275584 */
+.form-row input::placeholder {
+  color: #ccc;
+}
+/* IE10+支持  https://developer.mozilla.org/zh-CN/docs/Web/CSS/:-ms-input-placeholder */
+.form-row input:-ms-input-placeholder {
+  color: #ccc;
+}
+ /* Firefox 4-18 */
+.form-row input:-moz-placeholder {
+  color: #ccc;
+}
+ /* 很奇怪， FireFox60实测不支持 */
+ /* Firefox 19+(非标准) https://developer.mozilla.org/zh-CN/docs/Web/CSS/::-moz-placeholder*/
+.form-row input::-moz-placeholder {
+  color: #ccc; 
+}
+/* 实验中特性 https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown */
+.form-row input:placeholder-shown { 
+  color: #ccc; 
+  /* border: 2px solid red; */   /* border有效并且只有在Firefox有效*/
+}
+/* .form-row input[placeholder] {
+  color: #ccc;
+} */
+.btn-submit {
+  width: 100%;
+  padding: 0.8rem 0;
+  background-color: #5fc0cd;
+  color: #fff;
+  font-size: 0.8rem;
+  border: 0;
+  outline: none;
+}
+/*** forgetpw ***/
+.forgetpw {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.forgetpw > a {
+  font-size: 0.5rem;
+  margin: 0.5rem 0.5rem;
+}
+.forgetpw a:link,
+.forgetpw a:hover,
+.forgetpw a:active,
+.forgetpw a:visited,
+.forgetpw a:focus {
+  color: #5fc0cd;
+  text-decoration: underline;
+}
