@@ -53,7 +53,7 @@
     - GIF效果图没有做点击input显示"圆圈+x".
     - 处理：这个裁剪下PSD的图然后简单设置一下就可以简单加入输入行了.flex大法好!
   - 完成之后效果如下：
-      ![效果图](pic_effect/效果演示.png)
+      ![效果图](pic_effect/效果演示.gif)
 
 ### 二、验收标准
 
@@ -64,7 +64,7 @@
 2. 移动端：header始终固定顶部
   - 解决：header加fixed,给定width并设置top,完成.
   - 效果：
-    ![固定顶部效果](pic_effect/header固定效果演示.png)
+    ![固定顶部效果](pic_effect/header固定效果演示.gif)
 
 ### 三、探究input标签的placeholder样式
 
