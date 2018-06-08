@@ -74,6 +74,7 @@ header {
   text-align: center;
   height: 1.3rem;
   line-height: 1.3rem;
+  z-index: 1;
 }
 header > a {
   position: absolute;
@@ -85,13 +86,20 @@ header > a:first-child {
 header > a:last-child {
   right: 0.55rem;
 }
-header > span {
-  display: inline-block;
+header > h1 {
+  font-family: "黑体";
   font-size: 0.9rem;
-  font-family: "黑体"; 
+  font-weight: 500; 
+  display: inline;
 }
 main {
-  margin-top: 2.8rem;
+  position: absolute;
+  width: 100%;
+  top: 2.8rem;
+  overflow-y: hidden;
+}
+.content {
+  height: auto;
 }
 /*** form ***/
 .form-row {
@@ -99,14 +107,14 @@ main {
   justify-content: flex-start;
   align-items: center;
   background-color: #fff;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
-.row-icon {
+.row-label {
   padding: 0.5rem 0;
   line-height: 1.5rem;
   height: 1.5rem;
 }
-.row-icon > img {
+.row-label > img {
   padding: 0.25rem 1.1rem;
   width: 0.65rem;
   height: 1rem;
