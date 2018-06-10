@@ -16,6 +16,7 @@
 ## 明天计划的事情
 
 - [ ] 任务五计划及完成一部分
+- [ ] 了解CSS通配符 & 选择器性能优化/浏览器渲染原理
 - [ ] float学习(周六学习)
   - [ ] 张鑫旭《CSS世界》相关章节
   - [ ] 张鑫旭 float系列
@@ -90,6 +91,8 @@
     - 定位：相对最近的非static父级定位,如果没有则继续向上查找直到body,通过left、right、top、bottom位移,可通过z-index进行层次分级
     - 会生成一个块级框
   - fixed：固定定位
+    - 包裹性：让元素由原来宽度变成自适应内部元素的宽度
+    - 破坏性：脱离文档流，令原本占据的空间坍塌(布局破坏)
     - 相对于浏览器viewport定位,通过left、right、top、bottom位移,可通过z-index进行层次分级
     - 会生成一个块级框
   - inherit：从父类继承position属性的值
@@ -97,7 +100,7 @@
 2. 哪些css属性可以设置百分比，其计算原则是什么？
   - 参考：[MDN](https://web.archive.org/web/20150906065047/https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_percentage_values)
   - 计算原则：百分比*参照值
-    - Tip: 百分比值是一种相对值，任何时候要分析它的效果，都需要正确找到它的参
+    - Tip: 百分比值是一种相对值，任何时候要分析它的效果，都需要正确找到它的参照值
   - 可设置属性
     - 盒模型系列:
       - content: width(参照包含块宽度)、height(参照包含块高度)
@@ -163,7 +166,7 @@
   - 这部分个人经验不足，在网上找部分案例和解决方法
     - 1)[Web移动端Fixed布局的解决方案](http://efe.baidu.com/blog/mobile-fixed-layout/)
       - 问题图片：
-          ![fixed-bug](pic_effect/fixed-bug/fixed_bug_0.png)
+          ![fixed-bug](pic_effect/fixed_bug_0.png)
       - 问题描述：设置好上下fixed，中间普通margin与上下隔开.下拉列表超过一页，点击输入框，在软键盘唤起之后页面底部的fixed元素将失效.
       - 问题原因：软键盘唤起之后,页面fixed元素将失效，当页面超过一屏并滚动时，失效的fixed元素也会随之滚动.
       - 问题解决：

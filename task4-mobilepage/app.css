@@ -1,4 +1,9 @@
-* {
+/* 尽量不使用通配符，聚合需要的标签一起初始化 */
+/* * {    
+  margin: 0;
+  padding: 0;
+} */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
   margin: 0;
   padding: 0;
 }
@@ -21,6 +26,12 @@ a:focus {
   color: #fff;
   text-decoration: none;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 /*** header flex***/
 /* header {
   display: flex;
@@ -34,37 +45,38 @@ a:focus {
 header > a {
   font-size: 0.7rem;  
 }
-header > span {
+header > h1 {
   font-size: 0.9rem;
   font-family: "黑体";
+  font-weight: 500; 
+  display: inline;
 } */
 
 /*** header float **/
-/* header {
+header {
   background-color: #5fc0cd;
   color: #fff;
   padding: 0.5rem 0.55rem;
-  text-align: center;
   height: 1.3rem;
   line-height: 1.3rem;
 }
 header > a {
   font-size: 0.7rem;  
 }
-header > a:first-child {
-  float: left;
-}
-header > a:last-child {
-  float: right;
-}
-header > span {
-  display: inline-block;
+header > h1 {
   font-size: 0.9rem;
-  font-family: "黑体"; 
+  font-family: "黑体";
+  font-weight: 500; 
+  text-align: center;
+
+  margin: 0 2rem;
+}
+/* header > h1:after {
+  clear: both;
 } */
 
 /*** header absolute **/
-header {
+/* header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -91,7 +103,7 @@ header > h1 {
   font-size: 0.9rem;
   font-weight: 500; 
   display: inline;
-}
+} */
 main {
   position: absolute;
   width: 100%;
@@ -120,7 +132,7 @@ main {
   height: 1rem;
   border-right: 1px solid #eaedee;
 }
-.form-row input {
+.form-row > input {
   flex: 1;
   padding: 0.25rem 1.1rem;
   color: #444;
@@ -180,11 +192,11 @@ main {
   font-size: 0.5rem;
   margin: 0.5rem 0.5rem;
 }
-.forgetpw a:link,
-.forgetpw a:hover,
-.forgetpw a:active,
-.forgetpw a:visited,
-.forgetpw a:focus {
+.forgetpw >a:link,
+.forgetpw >a:hover,
+.forgetpw >a:active,
+.forgetpw >a:visited,
+.forgetpw >a:focus {
   color: #5fc0cd;
   text-decoration: underline;
 }

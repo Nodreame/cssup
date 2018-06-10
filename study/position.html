@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Position</title>
+  <link rel="stylesheet" href="position.css">
+</head>
+<body>
+  <div class="position-relative text-red">
+    <p class="relative">Relative Normal</p>
+    <p class="relative left-20">Relative Left20</p>
+    <p class="relative right-20">Relative Right20</p>
+    <p class="relative top-20">Relative Top20</p>
+    <p class="relative bottom-20">Relative Bottom20</p>
+  </div>
+  <div class="position-fixed text-yellow">
+    <p class="fixed">fixed Normal</p>
+    <p class="fixed left-20">fixed Left20</p>
+    <p class="fixed right-20">fixed Right20</p>
+    <p class="fixed top-20">fixed Top20</p>
+    <p class="fixed bottom-20">fixed Bottom20</p>
+  </div>
+  <!-- 
+    如果不把position设为static外的position，
+    那么absolute的效果可能将和fixed一样
+   -->
+  <div class="position-absolute text-pink">
+    <p class="absolute">absolute Normal</p>
+    <p class="absolute left-20">absolute Left20</p>
+    <p class="absolute right-20">absolute Right20</p>
+    <p class="absolute top-20">absolute Top20</p>
+    <p class="absolute bottom-20">absolute Bottom20</p>
+  </div>
+</body>
+</html>
