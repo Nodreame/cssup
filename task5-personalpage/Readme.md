@@ -6,15 +6,14 @@
   - 张鑫旭《CSS世界》相关章节
   - 张鑫旭 float系列
 2. 了解CSS通配符 & 选择器性能优化/浏览器渲染原理
-3. 任务五计划及完成一部分
-4. background学习(各属性及效果)
+3. background学习(各属性及效果)
+4. 完成任务五
+5. 学习CSS编码规范[CSS编码规范](https://github.com/fex-team/styleguide/blob/master/css.md), 并按照编码规范优化代码
+6. 深度思考
 
 ## 明天计划的事情
 
-- [ ] 完成任务五
 - [ ] 找时间把前面任务的官方提供链接过一遍，查缺补漏
-- [ ] CSS编码规范学习[CSS编码规范](https://github.com/fex-team/styleguide/blob/master/css.md)
-  - [ ] 并按照编码规范优化代码
 - [ ] 深度思考：手机分辨率和网页px的区别(TODO:周末补学)
   - [link1](http://www.cnblogs.com/yaozhongxiao/archive/2014/07/14/3842908.html)
   - [link2](https://jingyan.baidu.com/article/22a299b52586cd9e19376aa9.html)
@@ -41,7 +40,10 @@
   - 效果对比：
       ![效果对比](pic_effect/对比效果.png)
 3. 对比优化
-  - TODO: 学习背景图知识并尝试实现背景图效果
+  - 学习背景图知识并尝试实现背景图效果
+    - 完成background学习
+    - 学习了[fliter属性](https://www.w3cschool.cn/cssref/css3-pr-filter.html)，不过只是将图像模糊化并调整了亮度， 为此将原本的文字及图片abosulte开来, 然后原本的背景也改成用div.bg来实现模糊&亮度的修改.
+    - 顺便修缮了下location，使其支持多行地点文字布局不变形.
   - 技能高度每行都减少
   - 底部button高度提高,并取消纵向margin
   - footer加入padding
@@ -173,7 +175,10 @@
 
 ### 三、深度思考（TODO）
 
-1.css可以绘制哪些常见的特殊形状？
+1.css可以绘制哪些常见的特殊形状？ 参考：[CSS绘制各种形状](https://blog.csdn.net/luohuaxinyue/article/details/50781054)
+
+- 矩形、圆形、半圆、扇形、弧形、三角形、心形、对话框、棱形
+- TODO： 完成Demo
 
 2.如何理解vertical-align与line-height？
 
@@ -181,6 +186,9 @@
 
 4.title与h1、b与strong、i与em、img的alt与title、src与href有什么区别
 
-5.如何使用IconFont？
+5.如何使用IconFont？ 参考：[IconFont使用](http://www.iconfont.cn/plus/help/detail?helptype=code)
 
 6.HTML中dl、ul、ol用哪个比较好？
+  - dl: 定义列表，包含自定义列表项\<dt\>和自定义列表项的定义\<dd\>.适用于展示事务列表并需要对其进行解释说明的场景
+  - ul: 无序列表，默认用小圆点进行标记.适用于无序列表清单.但是由于自带的效果在不同浏览器效果不同，故一般会去掉标记.
+  - ol: 有序列表，默认用数字进行标记.适用于有序列表清单.
