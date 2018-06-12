@@ -182,7 +182,7 @@
     - [The Shapes of CSS](https://css-tricks.com/examples/ShapesOfCSS/)
 
 - 梯形、三角形、六边形、圆形、心型、五角星...
-- [SharpsDemo演示](../study/sharps.html)
+- [SharpsDemo演示](http://118.89.44.244/cssup/study/sharps.html)
 
 2.如何理解vertical-align与line-height？ 
 - 参考： 
@@ -208,7 +208,7 @@
 - 关系
   - *对于内联元素各种想得通或者想不通的行为表现，基本上都可以用vertical-align和line-height来解释，以及进行行为矫正*
   - vertical-align的百分比相对于line-height进行计算
-- [部分学习演示地址](../study/verticalAlignandlineHeight.html)
+- [学习演示地址](http://118.89.44.244/cssup/study/verticalAlignandlineHeight.html)
 
 3.请解释一下CSS3的Flexbox（弹性盒布局模型）以及适用场景？
 
