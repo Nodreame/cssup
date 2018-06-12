@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .justify-fix {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>line-height</p>
+        <div style="background-color: #e5edff;">
+            <span style="font-size: 15px;line-height: 0;">haha</span>
+        </div>
+        <p>1. vertical-align:baseline导致空白</p>
+        <!-- <div style="background-color: #e5edff;"> -->
+        <div style="background-color: #e5edff; font-size: 0;">
+        <!-- <div style="background-color: #e5edff;line-height: 5px;"> -->
+            <!-- <img src="./assert/img/usopp.jpg" alt="bg" style="display: block;"> -->
+            <!-- <img src="./assert/img/usopp.jpg" alt="bg" style="vertical-align: bottom"> -->
+            <img src="./assert/img/usopp.jpg" alt="bg" width="100" >
+            <span>x</span>
+        </div>
+        <p>2. 图片垂直居中(加font-size:0完全居中)</p>
+        <div style="background-color: #e5edff; line-height: 200px; font-size: 0;">
+            <img src="./assert/img/usopp.jpg" alt="bg" width="100" style="vertical-align: middle;">
+            <span>x</span>
+        </div>
+        <p>3. 复杂现象</p>
+        <div style="background-color: #e5edff; text-align: justify; line-height: 0;">
+            <img src="./assert/img/usopp.jpg" width="100">
+            <img src="./assert/img/usopp.jpg" width="100">
+            <img src="./assert/img/usopp.jpg" width="100">
+            <img src="./assert/img/usopp.jpg" width="100">
+            <img src="./assert/img/usopp.jpg" width="100">
+            <i class="justify-fix"></i>
+            <i class="justify-fix"></i>
+            <i class="justify-fix"></i>
+            <i class="justify-fix">sa</i>
+            <span>xxxx</span>
+        </div>
+    </main>
+</body>
+</html>

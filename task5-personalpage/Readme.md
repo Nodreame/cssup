@@ -47,6 +47,7 @@
   - 技能高度每行都减少
   - 底部button高度提高,并取消纵向margin
   - footer加入padding
+      ![效果演示](pic_effect/效果演示.gif)
 
 ### 二、CSS及浏览器部分探究
 
@@ -175,18 +176,75 @@
 
 ### 三、深度思考（TODO）
 
-1.css可以绘制哪些常见的特殊形状？ 参考：[CSS绘制各种形状](https://blog.csdn.net/luohuaxinyue/article/details/50781054)
+1.css可以绘制哪些常见的特殊形状？ 
+  - 参考：
+    - [奇妙的 CSS shapes(CSS图形)](http://www.cnblogs.com/coco1s/p/6992177.html)
+    - [The Shapes of CSS](https://css-tricks.com/examples/ShapesOfCSS/)
 
-- 矩形、圆形、半圆、扇形、弧形、三角形、心形、对话框、棱形
-- TODO： 完成Demo
+- 梯形、三角形、六边形、圆形、心型、五角星...
+- [SharpsDemo演示](../study/sharps.html)
 
-2.如何理解vertical-align与line-height？
+2.如何理解vertical-align与line-height？ 
+- 参考： 
+  - [深入理解line-height与vertical-align](http://www.cnblogs.com/xiaohuochai/p/5271217.html)
+  - [CSS深入理解vertical-align和line-height的基友关系](http://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/)
+- line-height: 行高.只影响inline元素及内容.
+  - 可选值：\<length\>|\<percentage\>|\<number\>|normal|inherit
+  - 默认值：normal(通常是font-size的1.2倍)
+  - 内容区：行内文本，font-size决定了其高度;
+  - 行内框：等于行间距(上半)+内容区+行间距(下半)，line-height决定了其高度;当font-size>line-height时行内框小于内容区;
+  - 行框：行内的最高行内框顶端到最低行内款底端的距离,且各行框顶端挨着上一行框的底端;
+  - 框属性：
+    - padding、border、margin的top\&bottom都不影响行高（行框高度）, 其left\&right都会应用到元素的开始结尾;
+    - 行内元素的边框边界由font-size控制而非line-height;
+  - 行内替换元素：根据元素的标签属性来决定其显示的具体内容的元素，如\<img\> & \<input\>. 其位于基线(vertical-align:bashline)上, 替换元素的基线是正常流中最后一个行框的基线，除非元素内容为空或者本身的overflow属性值不是visible，这种情况下基线是marigin底边缘.
+- vertical-align
+  - 可选值：
+    - 关键字值： baseline|sub|super|text-top|text-bottom|middle|top|bottom
+    - 长度值：??em|??px
+    - 百分比值：?% (*vertical-align的百分比相对于line-height进行计算*)
+    - 全局值：inherit|initial|unset
+  - 默认值：baseline
+- 关系
+  - *对于内联元素各种想得通或者想不通的行为表现，基本上都可以用vertical-align和line-height来解释，以及进行行为矫正*
+  - vertical-align的百分比相对于line-height进行计算
+- [部分学习演示地址](../study/verticalAlignandlineHeight.html)
 
 3.请解释一下CSS3的Flexbox（弹性盒布局模型）以及适用场景？
 
-4.title与h1、b与strong、i与em、img的alt与title、src与href有什么区别
+  - Flex布局用于简洁、完整、响应式地实现各种页面布局，给盒模型提供最大的灵活性. 采用Flex布局的元素称为Flex容器(flex container), 其所有子元素自动成为容器成员即Flex项目(flex item). 容器默认存在两根轴，水平的主轴(main axis)和交叉轴(cross axis),Flex项目默认沿主轴排列.
+  - 适用场景：
+    - 网格布局：设置flex
+    - 百分比布局：先设置flex:1, 再设置flex: 0 0 %
+    - 圣杯布局: 该填满的用flex:1
+    - 输入框布局：一侧定长，其他flex:1填满
+    - 悬挂式布局：一侧定长，其他flex:1填满
+    - 固定底栏：方向column，定高
+    - 流式布局: 参考任务一
+
+4.title与h1、b与strong、i与em、img的alt与title、src与href有什么区别 参考：[Web品质](http://www.w3school.com.cn/quality/quality_elements.asp)
+
+  - \<title\> & \<h1\>: \<title\>用于描述网页内容且整个文档中只出现一次，在搜索引擎列表、窗口标题栏、用户书签中可见，应尽量短且具有描述性; \<h1\>用于描述网页中最顶层的标题,符合语义化;
+  - \<b\> & \<strong\>: \<b\>为无意义的加粗，现在的Web标准不建议直接元素设计具体表现形式,故建议少用; \<strong\>表更强的强调，可以用CSS替换其加粗样式，比较符合Web标准;
+  - \<i\> & \<em\>: \<i\>为无意义的斜体，现在的Web标准不建议直接元素设计具体表现形式,故建议少用; \<em\>表示一般强调，可以用CSS替换其斜体样式，比较符合Web标准;
+  - \<img\>的alt & title属性、src & href属性：
+    - alt：无法显示图片时起到文本替代的作用, 浏览器在特殊浏览器上有辅助作用;
+    - title: 鼠标划过时的文本提示;
+    - src：资源对应路径，将资源加载到文档中;
+    - href：指向的链接，不加载资源;
 
 5.如何使用IconFont？ 参考：[IconFont使用](http://www.iconfont.cn/plus/help/detail?helptype=code)
+  - unicode引用：
+    - 使用：拷贝字体到项目然后加入font-face, css定义iconfont样式, 选择图标及字体编码应用于页面;
+    - 特点：兼容性好(IE6+);支持按字体方式动态调整图标大小颜色;不支持多色;
+  - font-class引用：
+    - 使用：拷贝[fontclass代码](at.alicdn.com/t/font_8d5l8fzk5b87iudi.css)，直接选图标并在应用上应用类名;
+    - 解决问题：解决unicode书写不直观 & 语意不明确的问题;
+    - 特点：兼容性良好(IE8+);语意明确;改图标只需要修改class的unicode引用;不支持多色;
+  - symbol引用:
+    - 使用：拷贝[symbol代码](at.alicdn.com/t/font_8d5l8fzk5b87iudi.js),引入CSS代码,直接选图标并在应用上应用类名;
+    - 特点：支持多色图标;可以像字体用font-size & color调整样式;兼容性较差(IE9+);svg渲染性能一般，逊于png.
+    - 解决问题：单色限制问题.
 
 6.HTML中dl、ul、ol用哪个比较好？
   - dl: 定义列表，包含自定义列表项\<dt\>和自定义列表项的定义\<dd\>.适用于展示事务列表并需要对其进行解释说明的场景

@@ -107,10 +107,13 @@ main {
     font-size: 0.6rem;
 }
 .detail-location img {
-    float: left;
+    /* float: left;
     width: 0.55rem;
     height: 0.7rem;
-    margin: 0.1rem 0.5rem;
+    margin: 0.1rem 0.5rem 0 0; */
+    width: 0.55rem;
+    height: 0.7rem;
+    vertical-align: middle;
 }
 .skill {
     font-size: 0.6rem;

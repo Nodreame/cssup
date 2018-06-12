@@ -1,0 +1,86 @@
+.trapezoid {
+    width: 50px;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #e5edff;
+}
+.traingle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #e5edff;
+}
+.traingle-quilateral {
+
+}
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #e5edff;
+}
+.square-cutcorner {
+    width: 40px;
+    height: 40px;
+    padding: 40px;
+    /* background-color: #e5edff; */
+    background: 
+        linear-gradient(135deg, transparent 15px, #e5edff 0) top left,
+        linear-gradient(-135deg, transparent 15px, #e5edff 0) top right,
+        linear-gradient(-45deg, transparent 15px, #e5edff 0) bottom right,
+        linear-gradient(45deg, transparent 15px, #e5edff 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+.pentagon {
+    position: relative;
+    width: 50px;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #e5edff;
+}
+.pentagon::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    width: 50px;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #e5edff;
+}
+.heart {
+
+}
+.star {
+    position: relative;
+    /* margin: 50px 0; */
+    width: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #e5edff;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg) scale(.6);
+}
+.star::before {
+    content: '';
+    position: absolute;
+    border-bottom: 80px solid #e5edff;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: -45px;
+    left: -65px;
+    transform: rotate(-35deg);
+}
+.star::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -105px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #e5edff;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+}
