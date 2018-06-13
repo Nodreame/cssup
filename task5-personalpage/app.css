@@ -33,7 +33,7 @@ a:focus {
 }
 
 /** header **/
-header {
+/* header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -52,7 +52,38 @@ header > h1 {
     text-align: center;
     font-size: 0.8rem;
     font-weight: 700;
-}
+} */
+
+/*** loginbar-float + absolute **/
+.loginbar-fa {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: #5fc0cd;
+    color: #fff;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    font-size: 0.7rem;
+    z-index: 9999;
+  }
+  .loginbar-fa .loginbar-leftlink {
+    float: left;
+    margin-left: 0.55rem;
+  }
+  .loginbar-fa .loginbar-rightlink {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.55rem;
+  }
+  .loginbar-fa .loginbar-title {
+    margin: 0 3rem;
+    font-size: 0.8rem;
+    font-family: 'SimHei', 'STHeiti', sans-serif;
+    font-weight: 500; 
+    text-align: center;
+  }
+
 /** main **/
 main {
     position: absolute;
@@ -89,12 +120,12 @@ main {
     align-items: center;
     height: 8.1rem;
 }
-.person > img {
+.person-img {
     width: 3.8rem;
     height: 3.8rem;
     margin: 0 1rem;
 }
-.detail {
+.person-detail {
     flex: 1;
     color: #fff;
     margin-left: 0.3rem;
@@ -107,14 +138,11 @@ main {
     font-size: 0.6rem;
 }
 .detail-location img {
-    /* float: left;
-    width: 0.55rem;
-    height: 0.7rem;
-    margin: 0.1rem 0.5rem 0 0; */
     width: 0.55rem;
     height: 0.7rem;
     vertical-align: middle;
 }
+
 .skill {
     font-size: 0.6rem;
 }
@@ -141,25 +169,23 @@ main {
     line-height: 2.5rem;
     border-bottom: 0.05rem solid #c6c6c9;
 }
-.skill-condition img {
+.skill-condition > img {
     height: 0.7rem;
     width: 0.7rem;
     margin: 0 0.2rem 0 0.4rem;
 }
 .skill-row {
-    display: flex;
     display: -ms-flexbox;
-    align-items: center;
-    /* -ms-flex-item-align: center; */
+    display: flex;
     -ms-align-items: center;
+        align-items: center;
     padding: 0.85rem 0;
     border-bottom: 0.05rem solid #c6c6c9;
 }
 .skill-row > label {
-    /* white-space: nowrap; */
     padding: 0 0.55rem;
-    color: #a7a6aa;
     border-right: 0.05rem solid #a7a6aa;
+    color: #a7a6aa;
 }
 .skill-row > span {
     -ms-flex: 1;
@@ -168,9 +194,11 @@ main {
     display: inline-flex;
     display: -ms-inline-flexbox;
 }
+
 .price {
     color: #e26163;
 }
+
 /** footer **/
 footer {
     position: fixed;
