@@ -10,7 +10,6 @@ body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,s
 html {
   font-size: 16px;
   font-size: 125%;
-  /* -webkit-text-size-adjust: 100%; */
 }
 body {
   background-color: #eff0f4;
@@ -26,84 +25,90 @@ a:focus {
   color: #fff;
   text-decoration: none;
 }
-.left {
+
+/*** loginbar float + absolute **/
+.loginbar-fa {
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #5fc0cd;
+  color: #fff;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  font-size: 0.7rem;
+  z-index: 9999;
+}
+.loginbar-fa .loginbar-leftlink {
   float: left;
+  margin-left: 0.55rem;
 }
-.right {
-  float: right;
+.loginbar-fa .loginbar-rightlink {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.55rem;
 }
-/*** header flex***/
-/* header {
+.loginbar-fa .loginbar-title {
+  margin: 0 2rem;
+  font-size: 0.9rem;
+  font-family: 'SimHei', 'STHeiti', sans-serif;
+  font-weight: 500; 
+  text-align: center;
+}
+/*** loginbar-flex ***/
+.loginbar-flex {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: #5fc0cd;
   color: #fff;
-  padding: 0.7rem 0.55rem;
-}
-header > a {
+  padding: 0.65rem 0;
   font-size: 0.7rem;  
 }
-header > h1 {
-  font-size: 0.9rem;
-  font-family: "黑体";
-  font-weight: 500; 
+.loginbar-flex .loginbar-leftlink {
+  margin-left: 0.55rem;
+}
+.loginbar-flex .loginbar-rightlink {
+  margin-right: 0.55rem;
+}
+.loginbar-flex .loginbar-title {
   display: inline;
-} */
-
-/*** header float **/
-header {
-  background-color: #5fc0cd;
-  color: #fff;
-  padding: 0.5rem 0.55rem;
-  height: 1.3rem;
-  line-height: 1.3rem;
-}
-header > a {
-  font-size: 0.7rem;  
-}
-header > h1 {
   font-size: 0.9rem;
-  font-family: "黑体";
+  font-family: 'SimHei', 'STHeiti', sans-serif;
   font-weight: 500; 
-  text-align: center;
-
-  margin: 0 2rem;
 }
-/* header > h1:after {
-  clear: both;
-} */
-
-/*** header absolute **/
-/* header {
+/*** loginbar-absolute **/
+.loginbar-absolute {
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 0.5rem 0;
   background-color: #5fc0cd;
   color: #fff;
-  padding: 0.5rem 0;
   text-align: center;
   height: 1.3rem;
   line-height: 1.3rem;
-  z-index: 1;
-}
-header > a {
-  position: absolute;
+  z-index: 9999;
   font-size: 0.7rem;  
 }
-header > a:first-child {
+.loginbar-absolute .loginbar-leftlink {
+  position: absolute;
   left: 0.55rem;
 }
-header > a:last-child {
+.loginbar-absolute .loginbar-rightlink {
+  position: absolute;
   right: 0.55rem;
 }
-header > h1 {
-  font-family: "黑体";
+.loginbar-absolute .loginbar-title {
+  display: inline;
+  font-family: 'SimHei', 'STHeiti', sans-serif;
   font-size: 0.9rem;
   font-weight: 500; 
-  display: inline;
-} */
+}
+
+
 main {
   position: absolute;
   width: 100%;
@@ -139,7 +144,7 @@ main {
   border: 0;
   outline: none;
 }
-.cross {
+.form-row .cross {
   width: 0.9rem;
   height: 0.9rem;
   margin-right: 0.5rem;
@@ -170,9 +175,7 @@ main {
   color: #ccc; 
   /* border: 2px solid red; */   /* border有效并且只有在Firefox有效*/
 }
-/* .form-row input[placeholder] {
-  color: #ccc;
-} */
+
 .btn-submit {
   width: 100%;
   padding: 0.8rem 0;

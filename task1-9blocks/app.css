@@ -10,7 +10,7 @@ body {
     background-color: orange;
 }
 
-/** container-flex **/
+/** way1 **/
 .container-flex > .wrap {
     display: flex;
     flex-direction: row;
@@ -30,13 +30,12 @@ body {
     margin: 3%;
 }
 
-/** container-flex2 **/
-.container-flex2 > .wrap {
+/** way2 **/
+.container-flex2  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.container-flex2 > .wrap > .block {
+.container-flex2 > .block {
     width: 30%;
-    /* margin-left: 4%; */
 }

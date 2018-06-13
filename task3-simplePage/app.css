@@ -26,14 +26,13 @@ body {
 .contact {
   padding-top: 4rem;
 }
-.contact .btn {
+.btn {
   display: inline-block;
   text-align: center;
 }
-.contact .btn p {
-  /* margin: 0; */
+.btn p {
   font-size: 1.2rem;
 }
-.contact .btn_contacts {
+.btn_contacts {
   float: right;
 }

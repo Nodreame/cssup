@@ -65,6 +65,9 @@
     - 处理：这个裁剪下PSD的图然后简单设置一下就可以简单加入输入行了.flex大法好!
   - 完成之后效果如下：
       ![效果图](pic_effect/效果演示.gif)
+4. 学习更多CSS知识之后修改:
+  - header使用分三种方案： flex、float+absolute、absolute，可以通过修改header的标签应用不同效果.
+  - form-row组建完成一行样式
 
 ### 二、验收标准
 
