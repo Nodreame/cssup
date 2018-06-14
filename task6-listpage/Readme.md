@@ -47,3 +47,5 @@
     - 中间div.bottombar-middlebtn用background画圆，div.bottombar-middlebtn里面用img填图片，使其垂直水平居中
   - 实现：
     - 中间的按钮图片：一开始设line-height&vertical-align：middle, 以为居中了但效果靠下, 想起张鑫旭大神的[vertical-algn&line-height好基友](http://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/), 把div.bottombar-middlebtn的font-size改为0, 将文本中线和绝对中线重合，完成垂直居中.
+
+    ![效果图](effect_pic/effect_result.png)
