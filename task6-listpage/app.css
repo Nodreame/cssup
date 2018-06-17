@@ -64,7 +64,7 @@ a:focus {
     align-items: center;
     position: fixed;
     width: 100%;
-    min-width: 300px;
+    min-width: 280px;
     top: 2rem;
     height: 2rem;
     border-bottom: 1px solid #ddd;
@@ -130,7 +130,7 @@ main {
     top: 4rem;
     bottom: 2.5rem;
     width: 100%;
-    min-width: 300px;
+    min-width: 280px;
     color: #aaa;
     font-size: 0.7rem;
     overflow: auto;
@@ -167,7 +167,13 @@ main {
     font-size: 0.8rem;
 }
 .data-time {
+    width: 60%;
     color: #000;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    -moz-binding:url('ellipsis.xml#ellipsis');
+    overflow:hidden;
 }
 .data-price {
     display: flex;
@@ -187,7 +193,7 @@ main {
     justify-content: center;
     position: fixed;
     width: 100%;
-    min-width: 300px;
+    min-width: 280px;
     height: 2.5rem;
     border-top: 1px solid #ddd;
     bottom: 0;
