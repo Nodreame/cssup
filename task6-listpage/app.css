@@ -2,7 +2,7 @@ html {
     font-size: 16px;
     font-size: 125%;
 }
-body {
+body, ul{
     margin: 0;
     padding: 0;
 }
@@ -21,6 +21,7 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
+    min-width: 15rem;
     height: 2rem;
     display: flex;
     align-items: center;
@@ -48,18 +49,22 @@ a:focus {
 }
 .topbar-location {
     position: absolute;
-    right: 0.8rem;
+    right: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    background: url(assert/img/sprite.png) no-repeat 10px -90px;
 }
-.topbar-location img {
+/* .topbar-location img {
     width: 1rem;
     height: 1rem;
-}
+} */
 /* .conditionbar  */
 .conditionbar {
     display: flex;
     align-items: center;
     position: fixed;
     width: 100%;
+    min-width: 300px;
     top: 2rem;
     height: 2rem;
     border-bottom: 1px solid #ddd;
@@ -77,23 +82,55 @@ a:focus {
 .conditionbar-item:first-child {
     border-left: 0;
 }
-.conditionbar-item > span {
+.item-title {
+    line-height: 2rem;
     text-align: center;
 }
-.conditionbar-item > img {
+.icon-triangle {
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+    width: 0.3rem;
+    height: 0.2rem;
+    background: url(assert/img/sprite.png) no-repeat -50px 0;
+}
+.item-dropdownlist {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    list-style: none;
+}
+.conditionbar-item:hover .item-dropdownlist {
+    display: block;
+}
+
+.item-dropdownlist > li {
+    border: 1px solid #ddd;
+    padding: 0.25rem 0;
+}
+.item-dropdownlist > li:hover {
+    /* border: 1px solid #ddd; */
+    /* padding: 0.25rem 0; */
+    color: #fff;
+    background-color: #55a8b3;
+}
+
+/* .conditionbar-item > img {
     position: absolute;
     top: 50%;
     right: 0.3rem;
     width: 0.3rem;
     height: 0.2rem;
     transform: translate(-50%, 0);
-}
+} */
 
 main {
     position: absolute;
     top: 4rem;
     bottom: 2.5rem;
     width: 100%;
+    min-width: 300px;
     color: #aaa;
     font-size: 0.7rem;
     overflow: auto;
@@ -110,9 +147,17 @@ main {
 .item-label {
     margin: 0.5rem;
 }
-.item-label > img{
+.label-icon {
+    display: inline-block;
+    margin-left: 0.6rem;
     width: 0.6rem;
     height: 0.6rem;
+}
+.icon-canlendar {
+    background: url(assert/img/sprite.png) no-repeat 0 -50px
+}
+.icon-locate {
+    background: url(assert/img/sprite.png) no-repeat -50px -50px;
 }
 .item-data {
     display: flex;
@@ -129,19 +174,20 @@ main {
     align-items: center;
     color: #e63b0e;
 }
-.data-price > img {
+.icon-goto {
+    margin-left: 0.5rem;
     width: 0.45rem;
     height: 0.8rem;
+    background: url(assert/img/sprite.png) no-repeat 0 0;
 }
-.data-price > img{
-    margin-left: 0.5rem;
-}
+
 
 .bottombar {
     display: inline-flex;
     justify-content: center;
     position: fixed;
     width: 100%;
+    min-width: 300px;
     height: 2.5rem;
     border-top: 1px solid #ddd;
     bottom: 0;
@@ -168,7 +214,26 @@ main {
     text-align: center;
     font-size: 0;
 }
-.bottombar-middlebtn > img{
+/* .bottombar-middlebtn > img{
+    vertical-align: middle;
+} */
+.icon-home {
+    display: inline-block;
+    width: 1.35rem;
+    height: 1.25rem;
+    background: url(assert/img/sprite.png) no-repeat 0 -150px;
+}
+.icon-people {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: url(assert/img/sprite.png) no-repeat -50px -150px;
+}
+.icon-write {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(assert/img/sprite.png) no-repeat -50px -100px;
     vertical-align: middle;
 }
 .bottombar-leftlink > img{
