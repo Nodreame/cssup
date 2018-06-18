@@ -52,7 +52,9 @@ a:focus {
     right: 0.2rem;
     width: 2rem;
     height: 2rem;
-    background: url(assert/img/sprite.png) no-repeat 10px -90px;
+    background: 
+        url(assert/img/sprite.png)
+        no-repeat 10px -90px;
 }
 /* .topbar-location img {
     width: 1rem;
@@ -92,7 +94,9 @@ a:focus {
     right: 0.3rem;
     width: 0.3rem;
     height: 0.2rem;
-    background: url(assert/img/sprite.png) no-repeat -50px 0;
+    background: 
+        url(assert/img/sprite.png)
+        no-repeat -50px 0;
 }
 .item-dropdownlist {
     display: none;
@@ -154,10 +158,14 @@ main {
     height: 0.6rem;
 }
 .icon-canlendar {
-    background: url(assert/img/sprite.png) no-repeat 0 -50px
+    background: 
+        url(assert/img/sprite.png)
+        no-repeat 0 -50px
 }
 .icon-locate {
-    background: url(assert/img/sprite.png) no-repeat -50px -50px;
+    background: 
+        url(assert/img/sprite.png) 
+        no-repeat -50px -50px;
 }
 .item-data {
     display: flex;
@@ -169,11 +177,11 @@ main {
 .data-time {
     width: 60%;
     color: #000;
-    white-space:nowrap;
-    text-overflow:ellipsis;
-    -o-text-overflow:ellipsis;
-    -moz-binding:url('ellipsis.xml#ellipsis');
-    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url('ellipsis.xml#ellipsis');
+    overflow: hidden;
 }
 .data-price {
     display: flex;
@@ -184,7 +192,9 @@ main {
     margin-left: 0.5rem;
     width: 0.45rem;
     height: 0.8rem;
-    background: url(assert/img/sprite.png) no-repeat 0 0;
+    background: 
+        url(assert/img/sprite.png)
+        no-repeat 0 0;
 }
 
 
@@ -227,19 +237,25 @@ main {
     display: inline-block;
     width: 1.35rem;
     height: 1.25rem;
-    background: url(assert/img/sprite.png) no-repeat 0 -150px;
+    background: 
+        url(assert/img/sprite.png)
+        no-repeat 0 -150px;
 }
 .icon-people {
     display: inline-block;
     width: 1.25rem;
     height: 1.25rem;
-    background: url(assert/img/sprite.png) no-repeat -50px -150px;
+    background: 
+        url(assert/img/sprite.png)
+        no-repeat -50px -150px;
 }
 .icon-write {
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    background: url(assert/img/sprite.png) no-repeat -50px -100px;
+    background: 
+        url(assert/img/sprite.png)
+        no-repeat -50px -100px;
     vertical-align: middle;
 }
 .bottombar-leftlink > img{
